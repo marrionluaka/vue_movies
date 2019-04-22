@@ -39,10 +39,7 @@ export default {
     },
 
     onToggle() {
-      if(this.showNotifications)
-        this.showNotifications = false;
-      else
-        this.showNotifications = true;
+      this.showNotifications = !this.showNotifications;
     },
   },
 };
