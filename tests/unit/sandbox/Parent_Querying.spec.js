@@ -4,13 +4,13 @@ import Parent from '@/sandbox/querying/Parent.vue';
 import Child from '@/sandbox/querying/Child.vue';
 import ParentWithManyChildren from '@/sandbox/querying/ParentWithManyChildren.vue';
 
-describe.only('Parent', () => {
+describe('Parent', () => {
   it('does not render a span', () => {
     const wrapper = shallowMount(Parent);
     expect(wrapper.find('span').isVisible()).to.be.false;
   });
 
-  it('does render a span', () => {
+  it('renders a span', () => {
     const wrapper = shallowMount(Parent, {
       data: () => ({
         showSpan: true,
