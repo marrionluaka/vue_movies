@@ -38,6 +38,7 @@ import TopChannels from './components/TopChannels/TopChannels.vue';
 
 export default {
   name: 'app',
+
   components: {
     Header,
     SideBar,
@@ -45,6 +46,10 @@ export default {
     Slider,
     TopChannels,
   },
+
+  data: () => ({
+
+  }),
 };
 </script>
 
