@@ -1,0 +1,19 @@
+import { expect } from 'chai';
+import mutations from '@/sandbox/vuex/mutations';
+
+describe('SET_POST', () => {
+  it('adds a post to the state', () => {
+    const post = { id: 1, title: 'Post' };
+    const state = {
+      postIds: [],
+      posts: {},
+    };
+
+    mutations.SET_POST(state, { post });
+
+    expect(state).to.eql({
+      postIds: [1],
+      posts: { 1: post },
+    });
+  });
+});
