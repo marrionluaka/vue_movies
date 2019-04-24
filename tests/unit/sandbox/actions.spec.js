@@ -3,7 +3,7 @@ import axios from 'axios';
 import sinon from 'sinon';
 import actions from '@/sandbox/vuex/actions';
 
-describe.only('authenticate', () => {
+describe('authenticate', () => {
   let sandbox;
   let axiosStub;
   let promiseStub;
